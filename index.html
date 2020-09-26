@@ -6,67 +6,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="G:\web\1. T3H\Bai tap buoi 2\Bai tap buoi 2.css">
     <style>
-        table{
+        table,tr,td,thead{
             border-collapse: collapse;
+            border: 1px solid black;
         }
     </style>
 
 </head>
 <body>
-    <table class="bang1" border="1" cellpadding="25px" >
+    <table class="bang1" cellpadding="25px" style="bo">
         <!--hang 1-->
         <tr>
-            <td colspan="2">1</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td colspan="2" rowspan="2">8</td>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" rowspan="2"></td>
         </tr>
         <!--hang 2-->
         <tr>
-            <td>1</td>
-            <td colspan="2" rowspan="4">2</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-        </tr>
+            <td></td>
+            <td colspan="2" rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+       </tr>
            <!--hang 3-->
            <tr>
-            <td>1</td>
-            <td colspan="5">3</td>
+            <td></td>
+            <td colspan="5"></td>
         </tr>
          <!--hang 4-->
          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
         </tr>
         <!--hang 5-->
         <tr>
-            <td>1</td>
-            <td>3</td>
-            <td colspan="2" rowspan="2">4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
+            <td></td>
+            <td></td>
+            <td colspan="2" rowspan="2"></td>
+            <td></td>
+            <td></td>
+       </tr>
        <!--hang 6-->
        <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>7</td>
-        <td>8</td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
         </tr>
     </table>
     <form action="">
-        <span style="background: #387D22; color:burlywood; padding:10px;">
-            Đăng kí thành viên
-        </span>
+        <p>
+        <h1 style="background: #387D22; color:rgb(255, 238, 217); padding:10px; display: inline;">
+                Đăng kí thành viên
+            
+        </h1>
+        </p>
         <table class="bang2" border="1" cellpadding="10px">
             <thead>
                 <tr>
@@ -77,7 +82,7 @@
             <tbody>
                 <tr>
                     <td>Họ Tên:	</td>
-                    <td> <input type="text" value="" name="họ tên" placeholder="Họ và Tên" ></td>
+                    <td> <input type="text" value="" name="họ tên" placeholder="nhập họ tên" ></td>
                 </tr>
                 <tr>
                     <td>Email:	</td>
@@ -107,7 +112,7 @@
                             <option value="15tuoi">15 tuổi</option>
                             <option value="16tuoi">16 tuổi</option>
                             <option value="17tuoi">17 tuổi</option>
-                            <option value="18tuoi">18 tuổi</option>
+                            <option value="18tuoi" selected >18 tuổi</option>
                             <option value="19tuoi">19 tuổi</option>
                         </select>
                     </td>
@@ -115,27 +120,28 @@
                 <tr>
                     <td>Giới tính:	</td>
                     <td>
-                        <p><input type="radio" name="gioitinh" id="">nam</p>
-                        <p><input type="radio" name="gioitinh" id="" checked>nữ</p>
+                        <input type="radio" name="gioitinh" id="">nam <br>
+                        <input type="radio" name="gioitinh" id="" checked>nữ
                     </td>
                 </tr>
                 <tr>
                     <td>Sở thích:	</td>
                     <td>
-                        <input type="checkbox" name="Đá bóng" id="" checked>Đá bóng
-                        <input type="checkbox" name="Cầu lông" id="" checke>Cầu lông
-                        <input type="checkbox" name="Đua thuyền" id="" checke>Đua thuyền
+                        <input type="checkbox" name="Đá bóng" id="" checked>Đá bóng <br>
+                        <input type="checkbox" name="Cầu lông" id="" checked>Cầu lông <br>
+                        <input type="checkbox" name="Đua thuyền" id="" checked>Đua thuyền
                     </td>
                 </tr>
                 <tr>
                     <td>Ghi chú:	</td>
                     <td>
-                        <textarea name="Ghi chú" id="" cols="30" rows="10">Buổi học 1 về HTML</textarea>
+                        <textarea name="Ghi chú" id="" cols="30" rows="3" placeholder="Buổi học về HTML"></textarea>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <input type="submit" value="Đăng Ký" class="nutbam">
+
+        <input type="submit" value="Đăng Ký" style="margin-top:20px;padding: 10px 30px;border-radius: 5px;background: brown;color:gainsboro; font-size: 15px;">
     </form>
 </body>
 </html>
