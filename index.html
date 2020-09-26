@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="G:\web\1. T3H\Bai tap buoi 2\Bai tap buoi 2.css">
+    $ git clone 
+</head>
+<body>
+    <table class="bang1" border="1" cellpadding="25px" >
+        <!--hang 1-->
+        <tr>
+            <td colspan="2">1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td colspan="2" rowspan="2">8</td>
+        </tr>
+        <!--hang 2-->
+        <tr>
+            <td>1</td>
+            <td colspan="2" rowspan="4">2</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+           <!--hang 3-->
+           <tr>
+            <td>1</td>
+            <td colspan="5">3</td>
+        </tr>
+         <!--hang 4-->
+         <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <!--hang 5-->
+        <tr>
+            <td>1</td>
+            <td>3</td>
+            <td colspan="2" rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+       <!--hang 6-->
+       <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>7</td>
+        <td>8</td>
+        </tr>
+    </table>
+    <form action="">
+        <h1>Đăng kí thành viên
+        </h1>
+        <table class="bang2" border="1" cellpadding="10px">
+            <thead>
+                <tr>
+                    <td><h2>Nội Dung</h2></td>
+                    <td><h2>Giá Trị</h2></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Họ Tên:	</td>
+                    <td> <input type="text" value="" name="họ tên" placeholder="Họ và Tên" ></td>
+                </tr>
+                <tr>
+                    <td>Email:	</td>
+                    <td> <input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:	</td>
+                    <td> <input type="password" name="matkhau"></td>
+                </tr>
+                <tr>
+                    <td>Avatar:	</td>
+                    <td> <input type="file" accept=".png" name="Avatar"></td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại:	</td>
+                    <td><input type="number" size="11"></td>
+                </tr>
+                <tr>
+                    <td>Tuổi:	</td>
+                    <td>
+                        <select name="tuoi" id="tuoi">
+                            <option value="12tuoi">12 tuổi</option>
+                            <option value="13tuoi">13 tuổi</option>
+                            <option value="14tuoi">14 tuổi</option>
+                            <option value="15tuoi">15 tuổi</option>
+                            <option value="16tuoi">16 tuổi</option>
+                            <option value="17tuoi">17 tuổi</option>
+                            <option value="18tuoi">18 tuổi</option>
+                            <option value="19tuoi">19 tuổi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính:	</td>
+                    <td>
+                        <p><input type="radio" name="nam" id="">nam</p>
+                        <p><input type="radio" name="nu" id="" checked>nữ</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích:	</td>
+                    <td>
+                        <input type="checkbox" name="Đá bóng" id="" checked>Đá bóng
+                        <input type="checkbox" name="Cầu lông" id="" checke>Cầu lông
+                        <input type="checkbox" name="Đua thuyền" id="" checke>Đua thuyền
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú:	</td>
+                    <td>
+                        <textarea name="Ghi chú" id="" cols="30" rows="10">Buổi học 1 về HTML</textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Đăng Ký" class="nutbam">
+    </form>
+</body>
+</html>
